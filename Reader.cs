@@ -14,7 +14,7 @@ namespace Homework_1
 		}
 
 		public void ReadInFile() {
-			List<Sale> values = File.ReadAllLines("")
+			List<Sale> values = File.ReadAllLines("/Users/ryankojan/Desktop/Spring2017/cs340/cs162hw01salesData01.csv")
 									.Skip(1)
 			                        .Select(x => Sale.FromCsv(x))
 									.ToList();
@@ -25,9 +25,16 @@ namespace Homework_1
 		}
 
 		public int AvaragePurchaseAmount() {
-			int temp = 0;
+			int averageAmount = 0;
 
-			return temp;
+			return averageAmount;
+		}
+
+		public int AmandaCount() {
+			int count = 0;
+
+
+			return count;
 		}
 
 		private void AddToList(Sale sale) {
@@ -37,8 +44,20 @@ namespace Homework_1
 		private void DisplaySales() {
 
 			foreach (Sale sale in _allSales) {
+				
+				Console.WriteLine(sale.TransactionDate);
+				Console.Write(sale.Product);
+				Console.WriteLine(sale.Price);
+				Console.WriteLine(sale.PaymentType);
+				Console.WriteLine(sale.City);
+				Console.WriteLine(sale.State);
+				Console.WriteLine(sale.Country);
+				Console.WriteLine(sale.Name);
+				Console.WriteLine(sale.AccountCreated);
+				Console.WriteLine(sale.LastLogin);
+				Console.WriteLine(sale.Latitude);
+				Console.WriteLine(sale.Longitude);
 
-				Console.WriteLine(sale);
 			}
 		}
 	}

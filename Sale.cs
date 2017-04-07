@@ -5,7 +5,7 @@ namespace Homework_1
 	{
 		public DateTime TransactionDate { get; set;}
 		public string Product { get; set; }
-		public int Price { get; set;}
+		public string Price { get; set;}
 		public string PaymentType { get; set;}
 		public string City { get; set;}
 		public string State { get; set;}
@@ -22,7 +22,7 @@ namespace Homework_1
 			Sale temp = new Sale();
 			temp.TransactionDate = Convert.ToDateTime(values[0]);
 			temp.Product = Convert.ToString(values[1]);
-			temp.Price = Convert.ToInt32(values[2]);
+			temp.Price = Convert.ToString(values[2]);
 			temp.PaymentType = Convert.ToString(values[3]);
 			temp.City = Convert.ToString(values[4]);
 			temp.State = Convert.ToString(values[5]);
