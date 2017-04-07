@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{906928BD-7A0E-4F67-BA14-9A5A187916CF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Reader.cs">
+    <Files>
+      <File FileName="Program.cs" Line="9" Column="31" />
+      <File FileName="Sale.cs" Line="17" Column="10" />
+      <File FileName="Reader.cs" Line="57" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Homework__1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
