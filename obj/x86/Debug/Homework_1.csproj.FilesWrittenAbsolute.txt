@@ -3,3 +3,8 @@
 /Users/ryankojan/Desktop/Spring2017/cs340/misc/Homework_1/bin/Debug/Homework_1.exe
 /Users/ryankojan/Desktop/Spring2017/cs340/misc/Homework_1/obj/x86/Debug/Homework_1.exe
 /Users/ryankojan/Desktop/Spring2017/cs340/misc/Homework_1/obj/x86/Debug/Homework_1.exe.mdb
+/Users/ryankojan/Desktop/Spring2017/cs340/hw1/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/ryankojan/Desktop/Spring2017/cs340/hw1/bin/Debug/Homework_1.exe.mdb
+/Users/ryankojan/Desktop/Spring2017/cs340/hw1/bin/Debug/Homework_1.exe
+/Users/ryankojan/Desktop/Spring2017/cs340/hw1/obj/x86/Debug/Homework_1.exe
+/Users/ryankojan/Desktop/Spring2017/cs340/hw1/obj/x86/Debug/Homework_1.exe.mdb

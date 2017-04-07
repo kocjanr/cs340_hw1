@@ -20,6 +20,8 @@ namespace Homework_1
 									.ToList();
 
 			_allSales = values;
+
+			this.DisplaySales();
 		}
 
 		public int AvaragePurchaseAmount() {
