@@ -27,26 +27,24 @@ namespace Homework_1
 		public int AvaragePurchaseAmount() {
 			int averageAmount = 0;
 
+			IEnumerable<string> PurchaseAmounts = _allSales.Select(x => x.Price);
+
 			return averageAmount;
 		}
 
 		public int AmandaCount() {
-			int count = 0;
-
+			IEnumerable<Sale> Person = _allSales.Where(x => x.Name == "Amanda" || x.Name == "amanda");
+			int count = Person.Count();
 
 			return count;
 		}
 
-		private void AddToList(Sale sale) {
-			_allSales.Add(sale);
-		}
-
 		private void DisplaySales() {
-
 			foreach (Sale sale in _allSales) {
 				
 				Console.WriteLine(sale.TransactionDate);
 				Console.Write(sale.Product);
+				Console.WriteLine("");
 				Console.WriteLine(sale.Price);
 				Console.WriteLine(sale.PaymentType);
 				Console.WriteLine(sale.City);
@@ -57,6 +55,7 @@ namespace Homework_1
 				Console.WriteLine(sale.LastLogin);
 				Console.WriteLine(sale.Latitude);
 				Console.WriteLine(sale.Longitude);
+				Console.WriteLine("");
 
 			}
 		}
