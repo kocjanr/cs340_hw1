@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{906928BD-7A0E-4F67-BA14-9A5A187916CF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Reader.cs">
     <Files>
-      <File FileName="Program.cs" Line="13" Column="1" />
-      <File FileName="Sale.cs" Line="13" Column="27" />
-      <File FileName="Reader.cs" Line="39" Column="17" NotebookId="1" />
+      <File FileName="Program.cs" Line="17" Column="36" />
+      <File FileName="Sale.cs" Line="19" Column="22" />
+      <File FileName="Reader.cs" Line="34" Column="21" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

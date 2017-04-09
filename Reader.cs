@@ -9,12 +9,12 @@ namespace Homework_1
 	{
 		private List<Sale> _allSales = new List<Sale>();
 
-		public Reader() {
-			this.ReadInFile();
+		public Reader(string filePath) {
+			this.ReadInFile(filePath);
 		}
 
-		public void ReadInFile() {
-			List<Sale> values = File.ReadAllLines("/Users/ryankojan/Desktop/Spring2017/cs340/cs162hw01salesData01.csv")
+		public void ReadInFile(string path) {
+			List<Sale> values = File.ReadAllLines(path)
 									.Skip(1)
 			                        .Select(x => Sale.FromCsv(x))
 									.ToList();
@@ -24,10 +24,15 @@ namespace Homework_1
 			this.DisplaySales();
 		}
 
-		public int AvaragePurchaseAmount() {
-			int averageAmount = 0;
+		public double AvaragePurchaseAmount() {
+			double averageAmount = 0;
+			List<Sale> AllSales = _allSales;
+			List<string> priceStrings = AllSales.Select(x => x.Price).ToList();
+			List<double> priceDoubles = priceStrings.ConvertAll(x => Double.Parse(x));
 
-			IEnumerable<string> PurchaseAmounts = _allSales.Select(x => x.Price);
+			averageAmount = priceDoubles.Average();
+
+			Console.WriteLine(averageAmount);
 
 			return averageAmount;
 		}
@@ -59,5 +64,6 @@ namespace Homework_1
 
 			}
 		}
+
 	}
 }

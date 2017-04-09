@@ -16,8 +16,7 @@ namespace Homework_1
 		public float Latitude { get; set; }
 		public float Longitude { get; set; }
 
-		public static Sale FromCsv(String CsvLine)
-		{
+		public static Sale FromCsv(String CsvLine) {
 			string[] values = CsvLine.Split(',');
 			Sale temp = new Sale();
 			temp.TransactionDate = Convert.ToDateTime(values[0]);
