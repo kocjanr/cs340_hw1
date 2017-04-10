@@ -44,6 +44,18 @@ namespace Homework_1
 			return count;
 		}
 
+		public void UpdateCountryName(string oldCountryName, string newCountryName) {
+			int numberOfUpdates = 0;
+			IEnumerable<Sale> oldName = _allSales.Where(x => x.Country == oldCountryName);
+			numberOfUpdates = oldName.Count();
+
+		
+		}
+
+		public void CreateCSVFile(IEnumerable<Sale> sales) { 
+		
+		}
+
 		private void DisplaySales() {
 			foreach (Sale sale in _allSales) {
 				
