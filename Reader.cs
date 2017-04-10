@@ -28,11 +28,18 @@ namespace Homework_1
 			double averageAmount = 0;
 			List<Sale> AllSales = _allSales;
 			List<string> priceStrings = AllSales.Select(x => x.Price).ToList();
-			List<double> priceDoubles = priceStrings.ConvertAll(x => Double.Parse(x));
 
-			averageAmount = priceDoubles.Average();
+			for (int i = 0; i < priceStrings.Count(); i++){
+				int temp;
+				temp = Convert.ToInt32(priceStrings[i]);
+			
+			}
 
-			Console.WriteLine(averageAmount);
+			//List<double> priceDoubles = priceStrings.ConvertAll(x => Double.Parse(x));
+
+			//averageAmount = priceDoubles.Average();
+
+			//WriteLine(averageAmount);
 
 			return averageAmount;
 		}
