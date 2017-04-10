@@ -16,10 +16,10 @@ namespace Homework_1
 
 			Reader read = new Reader(FileA);
 
-			int count = read.AmandaCount();
-			Console.WriteLine(count);
-			Console.WriteLine("Averages ");
-			read.AvaragePurchaseAmount();
+			int AmandaCount = read.AmandaCount();
+			Console.WriteLine("There are {0} records for Amanda", AmandaCount);
+			int AveragePrice = Convert.ToInt32(read.AvaragePurchaseAmount());
+			Console.WriteLine("Average price amount: ${0}", AveragePrice);
 
 			Reader readB = new Reader(FileB);
 

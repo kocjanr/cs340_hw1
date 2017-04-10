@@ -28,18 +28,17 @@ namespace Homework_1
 			double averageAmount = 0;
 			List<Sale> AllSales = _allSales;
 			List<string> priceStrings = AllSales.Select(x => x.Price).ToList();
+			List<int> priceInts = new List<int>();
 
 			for (int i = 0; i < priceStrings.Count(); i++){
-				int temp;
-				temp = Convert.ToInt32(priceStrings[i]);
-			
+				string tempPriceString = priceStrings[i];
+				int temp = 0;
+
+				Int32.TryParse(tempPriceString, out temp);
+				priceInts.Add(temp);
 			}
 
-			//List<double> priceDoubles = priceStrings.ConvertAll(x => Double.Parse(x));
-
-			//averageAmount = priceDoubles.Average();
-
-			//WriteLine(averageAmount);
+			averageAmount = priceInts.Average();
 
 			return averageAmount;
 		}
@@ -55,7 +54,6 @@ namespace Homework_1
 			int numberOfUpdates = 0;
 			IEnumerable<Sale> oldName = _allSales.Where(x => x.Country == oldCountryName);
 			numberOfUpdates = oldName.Count();
-
 		
 		}
 
