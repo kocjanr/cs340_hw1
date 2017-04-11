@@ -13,6 +13,7 @@ namespace Homework_1
 			this.ReadInFile(filePath);
 		}
 
+		//This function was written with help from lots of StackOverflow posts on C# file IO
 		public void ReadInFile(string path) {
 			List<Sale> values = File.ReadAllLines(path)
 									.Skip(1)
@@ -52,12 +53,18 @@ namespace Homework_1
 
 		public void UpdateCountryName(string oldCountryName, string newCountryName) {
 			int numberOfUpdates = 0;
-			IEnumerable<Sale> oldName = _allSales.Where(x => x.Country == oldCountryName);
+			List<Sale> oldName = _allSales.Where(x => x.Country == oldCountryName).ToList();
 			numberOfUpdates = oldName.Count();
-		
+
+			for (int i = 0; i < numberOfUpdates; i++) {
+				oldName[i].Country = newCountryName;
+			}
+
+			Console.WriteLine("{0} records updated.", numberOfUpdates);
+			CreateCSVFile(oldName);
 		}
 
-		public void CreateCSVFile(IEnumerable<Sale> sales) { 
+		private void CreateCSVFile(IEnumerable<Sale> sales) { 
 		
 		}
 

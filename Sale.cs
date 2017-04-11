@@ -16,6 +16,7 @@ namespace Homework_1
 		public float Latitude { get; set; }
 		public float Longitude { get; set; }
 
+		//This function was written with help from lots of StackOverflow posts on C# file IO
 		public static Sale FromCsv(String CsvLine) {
 			string[] values = CsvLine.Split(',');
 			Sale temp = new Sale();

@@ -17,10 +17,12 @@ namespace Homework_1
 			Reader read = new Reader(FileA);
 
 			int AmandaCount = read.AmandaCount();
-			Console.WriteLine("There are {0} records for Amanda", AmandaCount);
+			Console.WriteLine("There are {0} records for Amanda.", AmandaCount);
 			int AveragePrice = Convert.ToInt32(read.AvaragePurchaseAmount());
-			Console.WriteLine("Average price amount: ${0}", AveragePrice);
+			Console.WriteLine("Average price amount: ${0}.", AveragePrice);
+			read.UpdateCountryName("United States", "USA");
 
+			//This file doesn't read in properly since it has differnt columns than the first file
 			Reader readB = new Reader(FileB);
 
 		}
